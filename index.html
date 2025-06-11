@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>kamilss | Portpholio</title>
+
+  <!-- Google Fonts: Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+
+  <!-- Google Fonts: Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Tahoma&display=swap" rel="stylesheet"/>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff; 
+      color: #000;
+      transition: all 0.3s ease;
+    }
+
+    .navbar {
+      background-color: #000;
+      color: white;
+    }
+
+    .navbar a {
+      color: white !important;
+    }
+
+    .theme-toggle-btn {
+      background: none;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 0.4rem 0.8rem;
+      cursor: pointer;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #000;
+      display: inline-block;
+    }
+
+    .slogan {
+      background-color: #f2f2f2;
+      padding: 4rem 2rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-style: italic;
+    }
+
+    .contact {
+      background-color: #f2f2f2;
+      padding: 4rem 2rem;
+    }
+    #send_butt {
+        background-color: #2c2c2c;
+        color: #f2f2f2;
+    }
+
+    .work-item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      max-height: 200px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid #000;
+      color: #000;
+    }
+
+    #mainnn {
+        font-family: 'Tahoma', sans-serif;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding: 2rem 0;
+      background-color: #000;
+      color: white;
+      text-align: center;
+    }
+
+    /* Тёмная тема */
+    body.dark-theme {
+      background-color: #121212;
+      color: #fff;
+    }
+
+    body.dark-theme .card,
+    body.dark-theme .bg-light,
+    body.dark-theme .form-control {
+      background-color: #1e1e1e;
+      color: #fff;
+    }
+    body.dark-theme #send_butt {
+        background-color: #dcdcdc;
+        color: #323232;
+    }
+
+    body.dark-theme .form-control {
+      border-bottom: 1px solid #ccc;
+    }
+
+    body.dark-theme .slogan {
+      background-color: #1e1e1e;
+      color: #fff;
+    }
+
+    body.dark-theme .contact {
+      background-color: #1e1e1e;
+      color: #fff;
+    }
+
+    body.dark-theme footer {
+      background-color: #000;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Навигация -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">@kam1lk1ns</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#works">Мои работы</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+          <li class="nav-item ms-3">
+            <button class="theme-toggle-btn btn btn-sm" onclick="toggleTheme()">Тема</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Главная страница -->
+  <section id="home" class="text-center py-5">
+    <div class="container">
+      <h1 class="display-4" id="mainnn">Подниму ваш сайт для бизнеса с Нуля</h1>
+      <p class="lead">Веб-разработчик и дизайнер</p>
+    </div>
+  </section>
+
+  <!-- Слоган
+  <section class="slogan">
+    🔧 Верстка и доработка сайтов
+
+    📊 Работа с базами данных
+
+    🔒 Информационная безопасность
+  </section> -->
+
+  <!-- Обо мне -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Обо мне</h2>
+      <div class="row align-items-center">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <img src="5352648674368418028.jpg"  alt="MainPhoto" class="img-fluid rounded-5">
+        </div>
+        <div class="col-md-8">
+          <p>
+            Я веб-разработчик с 2-летним опытом создания сайтов и интерфейсов.
+            Умею работать с HTML, CSS, JavaScript, React, а также с инструментами верстки и адаптивного дизайна.
+            Создаю минималистичный стиль и функциональность в деталях.
+            Делаю сайты привлекательными на рынке.
+          </p>
+          <p>
+            Мои ключевые навыки: разработка пользовательских интерфейсов, оптимизация под мобильные устройства, 
+            кроссбраузерная верстка, работа с CMS, CRM и фреймворками.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Мои работы -->
+  <section id="works" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Мои работы</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+
+        <div class="col">
+          <div class="work-item card border-0 mb-4">
+            <img src="https://img.goodfon.ru/wallpaper/big/2/69/bloknot-stol-ruchka-kruzhka-kofe-nastroenie-stil.webp"  alt="'Принтки'" class="card-img-top">
+            <div class="card-body">
+              <a class="card-title" href="/Users/macos/Documents/портфолио/pen_redactor.html">Сайт для "Принтки"</a>
+              <p class="card-text">Минималистичный сайт для стартапа, делающий ручки с принтом на заказ.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="work-item card border-0 mb-4">
+            <img src="https://clustersystem.ru/wp-content/uploads/2024/10/8-1.webp"  alt="Проект 2" class="card-img-top">
+            <div class="card-body">
+              <a class="card-title" href="/Users/macos/Documents/портфолио/colorMakers_site.html">Сайт для "SM&ART"</a>
+              <p class="card-text">Сайт-визитка для SM&ART - умного дома.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="col">
+          <div class="work-item card border-0 mb-4">
+            <img src="https://www.redsign.ru/upload/medialibrary/3c9/3c9c023e1d57c26ae7c8c9ba908a9f85.png"  alt="Проект 3" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Проект Three</h5>
+              <p class="card-text">Лендинг для ресторана с акцентом на удобстве бронирования и отображении меню.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="work-item card border-0 mb-4">
+            <img src="https://www.redsign.ru/upload/medialibrary/3c9/3c9c023e1d57c26ae7c8c9ba908a9f85.png"  alt="Проект 4" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Проект Four</h5>
+              <p class="card-text">Портфолио дизайнера с галереей изображений и фильтрацией проектов.</p>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </section>
+
+ <!-- Контакты -->
+<section class="contact">
+    <div class="container">
+      <h2 class="section-title">Контакты</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <form id="contactForm" action="https://formspree.io/f/meokgqoq"  method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label">Имя</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Ваше имя" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Ваш email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Сообщение</label>
+              <textarea class="form-control" id="message" name="message" rows="4" placeholder="Ваше сообщение" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline" id="send_butt">Отправить</button>
+            <div id="formStatus" class="mt-3 text-success d-none">Спасибо за ваше сообщение!</div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h5>Социальные сети:</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://kwork.ru/user/autopsys"  target="_blank">Kwork Profile</a></li>
+            <li><a href="https://t.me/@kam1lk1ns"  target="_blank">Telegram</a></li>
+            <li><a href="is.kamil567@mail.ru">is.kamil567@mail.ru</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      const status = document.getElementById('formStatus');
+      // На случай ошибок можно использовать fetch и проверять ответ, но для простоты:
+      setTimeout(() => {
+        status.classList.remove('d-none');
+        document.getElementById('contactForm').reset();
+      }, 1000);
+    });
+  </script>
+
+  <!-- Подвал -->
+  <footer>
+    <p>&copy; 2025 AllRights.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+
+  <!-- Темная/светлая тема -->
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-theme');
+    }
+  </script>
+</body>
+</html>
