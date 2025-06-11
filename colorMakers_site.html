@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SM&ART | Интеллектуальное управление домом</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"  rel="stylesheet">
+
+    <!-- Google Fonts: Inter & Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #272c32; 
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        .navbar-brand {
+            font-weight: 600;
+            color: #0d6efd !important;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #7a90ff, #8f8f8f);
+            padding: 120px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 600;
+        }
+        .wttf {
+            font-family: 'Buduj Sans Trial', sans-serif;
+            color: #f0f0f0;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-top: 80px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .service-card {
+            transition: transform 0.3s ease-in-out;
+            border: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial {
+            background-color: #fff;
+            border-left: 4px solid #0d6efd;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        footer {
+            background-color: #1a1f24;
+            color: #ccc;
+            padding: 40px 0;
+        }
+
+        footer a {
+            color: #ccc;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: #0d6efd;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+<!-- Навигация -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">SM&ART</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Услуги</a></li>
+                <li class="nav-item"><a class="nav-link" href="#reviews">Отзывы</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Главный баннер -->
+<section class="hero" id="home" data-aos="fade-up">
+    <div class="container">
+        <h1 class="wttf">Интеллектуальное управление вашим домом</h1>
+        <p class="lead mt-3 text-muted">Автоматизация, безопасность и комфорт для вашего дома или офиса.</p>
+        <a href="#contacts" class="btn btn-primary mt-3">Заказать консультацию</a>
+    </div>
+</section>
+
+<!-- О нас -->
+<section id="about" class="py-5" data-aos="fade-up">
+    <div class="container">
+        <h2 class="section-title">О нас</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="https://clustersystem.ru/wp-content/uploads/2024/10/8-1.webp"
+                     alt="Smart home interior" class="img-fluid rounded shadow-sm">
+            </div>
+            <div class="col-md-6">
+                <p>Мы специализируемся на проектировании и внедрении решений «умного дома» для частных и корпоративных клиентов. Наши решения делают пространство безопаснее, эффективнее и удобнее.</p>
+                <p>Работаем по всей России. Гарантия на оборудование и установку. Только проверенные бренды и технологии.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Услуги -->
+<section id="services" class="py-5 bg-white" data-aos="fade-up">
+    <div class="container">
+        <h2 class="section-title">Наши услуги</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card service-card h-100">
+                    <img src="https://cdn.lemanapro.ru/lmru/image/upload/v1672040687/upload/fudzi/elbrus/advice-new/elektrotovary/umnii-svet-distancionnoe-upravlenie-osvecheniem/komponenti-sistemi-kontrolya.png/komponenti-sistemi-kontrolya.png"
+                         class="card-img-top" alt="Умное освещение">
+                    <div class="card-body">
+                        <h5 class="card-title">Умное освещение</h5>
+                        <p class="card-text">Регулировка яркости, автоматическое включение/выключение, голосовое управление.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card h-100">
+                    <img src="https://minisklad.s3.eu-central-1.amazonaws.com/store/infopage/54/headline_image/3b0b24fc2046c4ac0369534e73d5a871.jpg"
+                         class="card-img-top" alt="Безопасность">
+                    <div class="card-body">
+                        <h5 class="card-title">Системы безопасности</h5>
+                        <p class="card-text">Видеонаблюдение, датчики движения, сигнализация и удалённый доступ через мобильное приложение.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG4L2Ms6fi3hLBna65Xr9jGmQLWeY90bPHzNfoDpqpgNYoO2QYwO4gw2whK7yYG6RU0sA&usqp=CAU"
+                         class="card-img-top" alt="Термостат">
+                    <div class="card-body">
+                        <h5 class="card-title">Умный термостат</h5>
+                        <p class="card-text">Экономия энергии и комфортная температура благодаря интеллектуальному контролю микроклимата.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Отзывы -->
+<section id="reviews" class="py-5" data-aos="fade-up">
+    <div class="container">
+        <h2 class="section-title">Отзывы клиентов</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="testimonial">
+                    <p>“Все работает идеально. Теперь могу управлять светом и температурой даже из другой страны. Очень доволен.”</p>
+                    <strong>— Алексей С., Москва</strong>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="testimonial">
+                    <p>“Профессиональный подход, чёткая работа, всё объяснили и показали. Без лишней рекламы и шума — рекомендую!”</p>
+                    <strong>— Татьяна В., Санкт-Петербург</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Контакты -->
+<section id="contacts" class="py-5 bg-white" data-aos="fade-up">
+    <div class="container">
+        <h2 class="section-title">Свяжитесь с нами</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Имя</label>
+                        <input type="text" class="form-control" id="name" placeholder="Ваше имя">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ваш email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Сообщение</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Ваше сообщение"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary">Отправить</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h5>Контактная информация:</h5>
+                <p><strong>Телефон:</strong> +7 (999) 123-45-67</p>
+                <p><strong>Email:</strong> info@umnyi-dom.ru</p>
+                <p><strong>Адрес:</strong> г. Москва, ул. Технологическая, д. 10, офис 205</p>
+                <iframe 
+                    src="https://maps.google.com/maps?q=Москва%20ул.%20Технологическая%2010&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+    <div class="container">
+        <p>&copy; 2025 SM&ART. Все права защищены.</p>
+        <p>
+            <a href="#" class="me-3 text-decoration-none">Политика конфиденциальности</a> 
+            <a href="#" class="text-decoration-none">Условия использования</a>
+        </p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script> 
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
