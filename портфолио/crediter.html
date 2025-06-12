@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Юридическая помощь в процедуре банкротства. Профессиональные решения для физических и юридических лиц."/>
+  <meta name="keywords" content="банкротство, юридическая помощь, кредитное банкротство, услуги юриста, юрлицо, долговая разгрузка"/>
+  <title>Юридическое бюро "Старт"</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Arsenal&display=swap" rel="stylesheet"/>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Arsenal', sans-serif;
+      background-color: #f9f9fb; 
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .hero {
+      background: linear-gradient(to right, #eaeaea, #ffffff);
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #1a1a1a;
+    }
+
+    .section-title {
+      margin-top: 60px;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #2c2c2c;
+    }
+
+    .card {
+      border: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #fff;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    }
+
+    .footer {
+      background-color: #1a1a1a;
+      color: #ccc;
+      padding: 40px 0;
+    }
+
+    .footer a {
+      color: #ccc;
+      text-decoration: underline;
+    }
+
+    /* Кнопка из uiverse.io */
+    .btn-uiverse {
+      position: relative;
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #fff;
+      background: #1a1a1a;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      overflow: hidden;
+      z-index: 1;
+      transition: all 0.3s ease;
+    }
+
+    .btn-uiverse::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300%;
+      height: 300%;
+      background: #007bff;
+      opacity: 0;
+      border-radius: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      transition: all 0.4s ease;
+      z-index: 0;
+    }
+
+    .btn-uiverse:hover::before {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.2;
+    }
+
+    .btn-uiverse:hover {
+      color: #fff;
+      background: #007bff;
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      color: #555;
+    }
+
+    .testimonial-author {
+      font-weight: bold;
+      color: #1a1a1a;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Старт</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Услуги</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Отзывы</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1>Профессиональная помощь в банкротстве</h1>
+    <p class="lead mt-3">Для физических и юридических лиц. Прозрачно, надежно, без лишней шумихи.</p>
+    <a href="#contact" class="btn btn-uiverse mt-3">Связаться</a>
+  </div>
+</section>
+
+<!-- About Us -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="section-title">О нас</h2>
+    <div class="row align-items-center g-5">
+      <div class="col-md-6">
+        <img src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&w=800&q=80" alt="Юристы" class="img-fluid rounded shadow-sm"/>
+      </div>
+      <div class="col-md-6">
+        <p class="fs-5">Бюро "Старт" специализируется на оказании юридической помощи при банкротстве как физических, так и юридических лиц. Мы работаем строго по закону, обеспечивая прозрачность и защиту интересов клиента на всех этапах.</p>
+        <p class="fs-5">Наша команда состоит из опытных юристов, финансовых аналитиков и судебных представителей, готовых помочь вам восстановить финансовое равновесие.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="section-title">Наши услуги</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card p-4">
+          <h5 class="fw-bold mb-3">Консультация</h5>
+          <p>Бесплатная консультация с юристом по вашему вопросу. Определим оптимальную стратегию выхода из ситуации.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4">
+          <h5 class="fw-bold mb-3">Подготовка документов</h5>
+          <p>Полный пакет необходимой документации для процедуры банкротства. Все шаги за вас выполняют наши эксперты.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4">
+          <h5 class="fw-bold mb-3">Судебное сопровождение</h5>
+          <p>Все заседания, переговоры и взаимодействие с кредиторами возьмём на себя. Вы платите только за результат.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="py-5">
+  <div class="container">
+    <h2 class="section-title">Отзывы клиентов</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card p-4">
+          <p class="testimonial-text">«Вышли из долговой ямы всего за полгода. Без лишних хлопот и нервов. Благодарны команде!»</p>
+          <p class="testimonial-author">— ООО "ТехноСтрой", Москва</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4">
+          <p class="testimonial-text">«Юристы знали всё про процесс банкротства. Работали чётко, быстро и профессионально.»</p>
+          <p class="testimonial-author">— ИП Смирнов А.В., Санкт-Петербург</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4">
+          <p class="testimonial-text">«Не ожидал, что можно полностью очистить репутацию после банкротства. Спасибо за грамотную поддержку.»</p>
+          <p class="testimonial-author">— ФЛ Николаева Л.И., Казань</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="section-title">Свяжитесь с нами</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Имя</label>
+            <input type="text" class="form-control" id="name" placeholder="Ваше имя" required/>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Телефон</label>
+            <input type="tel" class="form-control" id="phone" placeholder="+7 (___) ___-__-__" required/>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Сообщение</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Ваш запрос или вопрос"></textarea>
+          </div>
+          <button type="submit" class="btn btn-uiverse w-100">Отправить заявку</button>
+        </form>
+        <div class="mt-4 text-center">
+          <p><strong>📞 Телефон:</strong> +7 (999) 123-45-67</p>
+          <p><strong>✉️ Email:</strong> legal@nstart.ru</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 Юридическое бюро "Старт". Все права защищены.</p>
+    <p class="mt-2">
+      <a href="#" class="text-decoration-none">Политика конфиденциальности</a> 
+    </p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
