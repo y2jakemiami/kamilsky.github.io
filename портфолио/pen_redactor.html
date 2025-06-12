@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Принтки</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"  rel="stylesheet"/>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dudka&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Alegreya Sans', cursive;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #ffe0e0, #e0f7fa); 
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        .btn-custom {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #ff1493;
+            transform: scale(1.05);
+        }
+
+        .section-title {
+            margin-top: 60px;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="bg-white py-3 shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="mb-0">Принтки</h1>
+        <nav>
+            <a href="#services" class="mx-2 text-decoration-none">Услуги</a>
+            <a href="#advantages" class="mx-2 text-decoration-none">Преимущества</a>
+            <a href="#reviews" class="mx-2 text-decoration-none">Отзывы</a>
+            <a href="#contacts" class="mx-2 text-decoration-none">Контакты</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <img src="https://cdn-icons-png.flaticon.com/512/176/176318.png" alt="Принтки" class="img-fluid rounded mb-4" style="max-height: 250px; object-fit: cover;">
+        <h1>Создайте уникальные ручки с вашим дизайном!</h1>
+        <p class="lead mt-3">Индивидуальный принт на шариковых ручках за считанные дни.</p>
+        <a href="#contacts" class="btn btn-custom btn-lg mt-3">Заказать сейчас</a> 
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="container my-5">
+    <h2 class="section-title">Наши услуги</h2>
+    <div class="row g-4 mt-3">
+        <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQluiiOpBE3gMAqRim0f3XO1k50YyGf4wbVZRgOo5Ox98Ni4GEi4dxeSgAZN32Aa1STR-Y&usqp=CAU" class="card-img-top" alt="Цветной принт">
+                <div class="card-body">
+                    <h5 class="card-title">Цветной принт</h5>
+                    <p class="card-text">Наносим полноцветные логотипы, узоры и надписи на любую поверхность ручки.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsw0Ft8vCg0EcGCxISZTAdEcbLmr4KnR2MR04IuuH8wQkY7NbSEkXXjI6skGjOUQ6SIJ4&usqp=CAU" class="card-img-top" alt="Тампопечать">
+                <div class="card-body">
+                    <h5 class="card-title">Тампопечать</h5>
+                    <p class="card-text">Высококачественная печать с использованием современных технологий переноса изображения.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrbI7BQ-3Dv36A9OVXvnv_MpIAVqBD0HZsjxT6PmcYy3loaBZWeWV_fy0-lSnCUWS4bRQ&usqp=CAU" class="card-img-top" alt="Лазерная гравировка">
+                <div class="card-body">
+                    <h5 class="card-title">Лазерная гравировка</h5>
+                    <p class="card-text">Для элитных моделей ручек предлагаем стильную и долговечную гравировку.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Advantages Section -->
+<section id="advantages" class="bg-light py-5">
+    <div class="container">
+        <h2 class="section-title">Почему выбирают нас?</h2>
+        <ul class="list-group list-group-flush mt-4">
+            <li class="list-group-item bg-transparent"><strong>✅ Высокое качество:</strong> Мы используем только проверенные материалы и технологии.</li>
+            <li class="list-group-item bg-transparent"><strong>✅ Скорость:</strong> Изготовление от 1 до 3 дней в зависимости от сложности.</li>
+            <li class="list-group-item bg-transparent"><strong>✅ Индивидуальный подход:</strong> Учитываем все пожелания клиента.</li>
+            <li class="list-group-item bg-transparent"><strong>✅ Гарантия:</strong> Возврат или переделка, если результат вас не устроит.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Reviews Section -->
+<section id="reviews" class="container my-5">
+    <h2 class="section-title">Отзывы клиентов</h2>
+    <div class="row mt-4">
+        <div class="col-md-6 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text">"Огромное спасибо за креативные ручки! Подарили сотрудникам на корпоратив — все в восторге!"</p>
+                    <p class="text-muted">— Елена, Москва</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text">"Брали ручки с логотипом компании для промо-акции. Результат превзошёл ожидания!"</p>
+                    <p class="text-muted">— Иван, Санкт-Петербург</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contacts Section -->
+<section id="contacts" class="bg-white py-5">
+    <div class="container">
+        <h2 class="section-title">Свяжитесь с нами</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Ваше имя</label>
+                        <input type="text" class="form-control" id="name" placeholder="Анна Иванова">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="anna@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Сообщение</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Я хочу заказать..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-custom">Отправить</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <p><strong>Телефон:</strong> +7 (999) 123-45-67</p>
+                <p><strong>Email:</strong> info@rukisprintom.ru</p>
+                <p><strong>Адрес:</strong> ул. Пушкина, д. 10, офис 303, Москва</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+    <p class="mb-0">&copy; 2025 Принтки. Все права защищены.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
